@@ -23,7 +23,9 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.blue,
       ),
       body: ExampleWidget(),
-
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+      ),
     );
   }
 }
