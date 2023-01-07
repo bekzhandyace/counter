@@ -1,31 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:yos/example_widget.dart';
+import 'package:yos/ui/widgets/example_widget.dart';
+import 'my_app.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: MyApp(),
+    home: MainApp(),
   ));
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('my Appp'),
-        backgroundColor: Colors.blue,
-      ),
-      body: ExampleWidget(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-      ),
+      body: MyApp(),
     );
   }
 }
